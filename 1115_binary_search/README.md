@@ -1,5 +1,10 @@
-## 이진검색 Binary Search
+## Algorithm
+<pre><code>
+Binary Search
+</code></pre>
 
-### 시작일: 11월 15일 금
-### 종료일: 11월 16일 토
+### Deadline
+<pre><code>
+Saturday, the 16th of November
+</code></pre>
 
