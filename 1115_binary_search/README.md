@@ -3,7 +3,7 @@
 Binary Search
 </code></pre>
 
-### Deadline
+## Deadline
 <pre><code>
 Saturday, the 16th of November
 </code></pre>
