@@ -8,6 +8,7 @@ for (let i = 1; i < array.length; i++) {
         if ( array[position-1] > box ) {
             array[position] = array[position-1];
             position = position - 1;
+            break;
         }
         array[position] = box;
     }
