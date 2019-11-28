@@ -5,12 +5,11 @@ for (let i = 1; i < array.length; i++) {
     box = array[position];
 
     for (let j = 0; j < i; j++) {
-        if ( array[position-1] > array[position] ) {
-
+        if ( array[position-1] > box ) {
             array[position] = array[position-1];
-            array[position-1] = box;
             position = position - 1;
         }
+        array[position] = box;
     }
 }
 console.log(array)
