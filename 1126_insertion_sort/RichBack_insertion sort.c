@@ -6,16 +6,16 @@ int main()
 	int length = sizeof(arr) / sizeof(int);
 	int pos, temp;
 
-	printf("[¼±ÅÃÁ¤·Ä]\n\n");
-	puts("Á¤·Ä Àü ¹è¿­, Á¤·Ä ÈÄ ¹è¿­");
+	printf("[ì„ íƒì •ë ¬]\n\n");
+	puts("ì •ë ¬ ì „ ë°°ì—´, ì •ë ¬ í›„ ë°°ì—´");
 	for (int i = 0; i < length; i++)
 		printf("%2d ", arr[i]);
 
-	//Á¤·Ä
+	//ì •ë ¬
 	for (int i = 1; i < length; i++)
 	{
 		temp = arr[i];
-		for (pos = i; temp < arr[pos - 1]; pos--)
+		for (pos = i; temp < arr[pos - 1] && pos > 0; pos--)
 		{
 			arr[pos] = arr[pos - 1];
 		}
