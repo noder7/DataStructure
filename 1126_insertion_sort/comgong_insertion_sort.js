@@ -1,17 +1,17 @@
 let array = [ 10, 9, 8, 7, 6,5, 4, 3, 2, 1 ];
-let box, position;
+let box, start;
 
 for (let i = 1; i < array.length; i++) {
     // first item of unsorted items
-    position = i;
+    start = i-1;
     box = array[i];
     // compare a value inside box with sorted items and shift items
-    while (position > 0 && array[position-1] > box) {
-        array[position] = array[position-1];
-        position--;
+    while (start >= 0 && array[start] > box) {
+        array[start+1] = array[start];
+        start--;
     }
     
-    array[position] = box;
+    array[start+1] = box;
 
 }
 console.log(array);
