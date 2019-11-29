@@ -1,9 +1,9 @@
 // Selection sort
 let array = [ 5, 4, 1, 2, 3 ];
 let minIndex;
-let temp = 0;
 
-for (let i = 0; i < array.length; i++) {
+// last element is always a sorted value when i = n-1
+for (let i = 0; i < array.length-1; i++) {
 
     minIndex = i;
 
@@ -12,9 +12,8 @@ for (let i = 0; i < array.length; i++) {
             minIndex = j;
     }
 
-    temp = array[minIndex];
-    array[minIndex] = array[i];
-    array[i] = temp;
+    if(minIndex != i)
+        [array[minIndex], array[i]] = [array[i], array[minIndex]];
 }
 
 console.log(array);
