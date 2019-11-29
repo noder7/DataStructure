@@ -1,16 +1,17 @@
-let array = [ 5, 4, 3, 2, 1 ];
+let array = [ 10, 9, 8, 7, 6,5, 4, 3, 2, 1 ];
 let box, position;
-for (let i = 1; i < array.length; i++) {
-    position = i;
-    box = array[position];
 
-    for (let j = 0; j < i; j++) {
-        if ( array[position-1] > box ) {
-            array[position] = array[position-1];
-            position = position - 1;
-            break;
-        }
-        array[position] = box;
+for (let i = 1; i < array.length; i++) {
+    // first item of unsorted items
+    position = i;
+    box = array[i];
+    // compare a value inside box with sorted items and shift items
+    while (position > 0 && array[position-1] > box) {
+        array[position] = array[position-1];
+        position--;
     }
+    
+    array[position] = box;
+
 }
-console.log(array)
+console.log(array);
